@@ -33,6 +33,32 @@ cd SIC-Assembler
 python3 assembler.py <source file>
 ```
 
+## Example
+
+run `python3 assembler.py addexample.asm` in terminal to convert `.asm` to `.obj`
+
+### `addexample.asm`
+
+```asm
+ADDEX	START	1000
+FIRST	LDA	THREE
+        ADD	FIVE
+        STA	RESULT
+        RSUB
+THREE	WORD	3
+FIVE	WORD	5
+RESULT	RESW	1
+        END	FIRST
+```
+
+### `addexample.obj`
+
+```obj
+HADDEX 001000000015
+T0010001200100C18100F0C10124C0000000003000005
+E001000
+```
+
 ## License：MIT
 
 This package is [MIT licensed](https://github.com/5j54d93/SIC-Assembler/blob/main/LICENSE).
