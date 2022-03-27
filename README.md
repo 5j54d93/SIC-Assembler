@@ -8,6 +8,11 @@
 
 An assembler for SIC（Simplified Instructional Computer）in Python.
 
+- `assembler.py`：main program
+- `pass1.py`：Create SYMTAB（Symbol Table）
+- `pass2.py`：Write object file
+- `sic.py`：store SIC instruction set and directive
+
 ## How To Use
 
 1. Download this repository via `git clone`
